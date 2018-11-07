@@ -44,21 +44,21 @@ The only way to install this component is via Composer.
 Say what the step will be
 
 ```
-$ composer require jamal/unitconverter
+$ composer require jamal/unit-converter
 ```
 
 ### Setup
-
-Add the following in the alias array in app.php file.
-
-```
-'UC' => UnitConverter\UnitConverterFacade::class
-```
 
 Add the following in providers array in app.php file.
 
 ```
 UnitConverter\UnitConverterServiceProvider::class
+```
+
+Add the following in the alias array in app.php file.
+
+```
+'UC' => UnitConverter\UnitConverterFacade::class
 ```
 
 ### How to use
