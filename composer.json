@@ -1,0 +1,26 @@
+{
+    "name": "jamal/unit-converter",
+    "description": "This package converts different units.",
+    "keywords": [
+      "units",
+      "unit converter"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Jamal Abdul Nasir",
+            "email": "janasir35@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=5.5.9",
+      "laravel/framework": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jamal\\UnitConverter\\": "src/"
+        }
+    }
+}
