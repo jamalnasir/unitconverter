@@ -70,7 +70,7 @@ UC::kilometers()->toMile(1)
 // this will convert miles to kilometers
 UC::Miles()->toKilometer(1)
 
-// this will convert kilometers to nautical miles
+// this will convert nautical miles to kilometers
 UC::nauticalMiles()->toKilometer(1)
 ```
 
