@@ -23,6 +23,7 @@ It supports the following types of measurement by default (more measurement type
 	- Kilometers
 	- Miles
 	- Nautical Miles
+	- Centimeters
 - Area _Coming Soon!_
 - Data Transfer Rates _Coming Soon!_
 - Digital Storage _Coming Soon!_
