@@ -1,26 +1,54 @@
 {
     "name": "jamal/unit-converter",
-    "description": "This package converts different units.",
+    "description": "A modern, well-tested unit conversion library for PHP 8.1+ with Laravel 10 integration.",
     "keywords": [
       "units",
-      "unit converter"
+      "unit converter",
+      "laravel",
+      "measurement",
+      "conversion"
     ],
     "license": "MIT",
-    "type": "package",
+    "type": "library",
     "authors": [
         {
             "name": "Jamal Abdul Nasir",
             "email": "janasir35@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-      "php": ">=5.5.9",
-      "laravel/framework": ">=5.6"
+      "php": "^8.1",
+      "illuminate/support": "^10.0"
+    },
+    "require-dev": {
+      "orchestra/testbench": "^8.0",
+      "phpunit/phpunit": "^10.5",
+      "laravel/pint": "^1.0",
+      "phpstan/phpstan": "^1.11"
     },
     "autoload": {
         "psr-4": {
             "Jamal\\UnitConverter\\": "src/"
+        },
+        "files": [
+          "src/helpers.php"
+        ]
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Jamal\\UnitConverter\\Laravel\\UnitConverterServiceProvider"
+        ],
+        "aliases": {
+          "UnitConverter": "Jamal\\UnitConverter\\Laravel\\UnitConverterFacade"
         }
-    }
+      }
+    },
+    "scripts": {
+      "test": "phpunit",
+      "format": "pint",
+      "analyse": "phpstan analyse"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
